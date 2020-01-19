@@ -13,4 +13,277 @@ Comment2 "Gabriel Gunderson"
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L power:Earth #PWR0102
+U 1 1 5DF4923F
+P 800 4075
+F 0 "#PWR0102" H 800 3825 50  0001 C CNN
+F 1 "Earth" H 800 3925 50  0001 C CNN
+F 2 "" H 800 4075 50  0001 C CNN
+F 3 "~" H 800 4075 50  0001 C CNN
+	1    800  4075
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Transformer_1P_SS T1
+U 1 1 5E06AD5C
+P 4750 2025
+F 0 "T1" H 4750 2406 50  0000 C CNN
+F 1 "Transformer" H 4750 2315 50  0000 C CNN
+F 2 "Transformer_THT:Transformer_Microphone_Lundahl_LL1538" H 4750 2025 50  0001 C CNN
+F 3 "~" H 4750 2025 50  0001 C CNN
+	1    4750 2025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 1825 4150 1825
+Wire Wire Line
+	4350 2225 4150 2225
+Text Label 4150 2225 0    50   ~ 0
+AC_N
+$Comp
+L Connector:Conn_WallPlug_Earth P1
+U 1 1 5E07373A
+P 1900 1775
+F 0 "P1" H 1967 2100 50  0000 C CNN
+F 1 "Wall Plug" H 1967 2009 50  0000 C CNN
+F 2 "" H 2300 1775 50  0001 C CNN
+F 3 "~" H 2300 1775 50  0001 C CNN
+	1    1900 1775
+	1    0    0    -1  
+$EndComp
+Text Label 2525 1875 2    50   ~ 0
+AC_N
+Text Label 2525 1675 2    50   ~ 0
+AC_P
+Wire Wire Line
+	2200 1875 2525 1875
+Wire Wire Line
+	2200 1675 2525 1675
+$Comp
+L Connector:Conn_01x02_Male J3
+U 1 1 5E077F05
+P 3425 3000
+F 0 "J3" H 3533 3181 50  0000 C CNN
+F 1 "Auger Conn" H 3533 3090 50  0000 C CNN
+F 2 "" H 3425 3000 50  0001 C CNN
+F 3 "~" H 3425 3000 50  0001 C CNN
+	1    3425 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J4
+U 1 1 5E07858E
+P 3300 3975
+F 0 "J4" H 3408 4156 50  0000 C CNN
+F 1 "Fan Conn" H 3408 4065 50  0000 C CNN
+F 2 "" H 3300 3975 50  0001 C CNN
+F 3 "~" H 3300 3975 50  0001 C CNN
+	1    3300 3975
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J5
+U 1 1 5E078BB5
+P 2975 5000
+F 0 "J5" H 3083 5181 50  0000 C CNN
+F 1 "Rod Conn" H 3083 5090 50  0000 C CNN
+F 2 "" H 2975 5000 50  0001 C CNN
+F 3 "~" H 2975 5000 50  0001 C CNN
+	1    2975 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D6
+U 1 1 5E0799FF
+P 2950 3000
+F 0 "D6" H 2943 3216 50  0000 C CNN
+F 1 "Auger LED" H 2943 3125 50  0000 C CNN
+F 2 "" H 2950 3000 50  0001 C CNN
+F 3 "~" H 2950 3000 50  0001 C CNN
+	1    2950 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D4
+U 1 1 5E079E9E
+P 2900 4050
+F 0 "D4" H 2893 4266 50  0000 C CNN
+F 1 "Fan Triac" H 2893 4175 50  0000 C CNN
+F 2 "" H 2900 4050 50  0001 C CNN
+F 3 "~" H 2900 4050 50  0001 C CNN
+	1    2900 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D5
+U 1 1 5E07A261
+P 2625 5100
+F 0 "D5" H 2618 5316 50  0000 C CNN
+F 1 "Rod LED" H 2618 5225 50  0000 C CNN
+F 2 "" H 2625 5100 50  0001 C CNN
+F 3 "~" H 2625 5100 50  0001 C CNN
+	1    2625 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_TRIAC_A1A2G D1
+U 1 1 5E07ACBD
+P 2025 2975
+F 0 "D1" H 2153 3021 50  0000 L CNN
+F 1 "Auger Triac" H 2153 2930 50  0000 L CNN
+F 2 "" V 2100 3000 50  0001 C CNN
+F 3 "~" V 2025 2975 50  0001 C CNN
+	1    2025 2975
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_TRIAC_A1A2G D2
+U 1 1 5E07B684
+P 1975 3950
+F 0 "D2" H 2103 3996 50  0000 L CNN
+F 1 "Fan Triac" H 2103 3905 50  0000 L CNN
+F 2 "" V 2050 3975 50  0001 C CNN
+F 3 "~" V 1975 3950 50  0001 C CNN
+	1    1975 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_TRIAC_A1A2G D3
+U 1 1 5E07BB62
+P 1850 5025
+F 0 "D3" H 1978 5071 50  0000 L CNN
+F 1 "Rod Triac" H 1978 4980 50  0000 L CNN
+F 2 "" V 1925 5050 50  0001 C CNN
+F 3 "~" V 1850 5025 50  0001 C CNN
+	1    1850 5025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 3175 5350 3175
+Wire Wire Line
+	5750 3275 5350 3275
+Wire Wire Line
+	5750 3375 5350 3375
+Wire Wire Line
+	5750 3475 5350 3475
+Wire Wire Line
+	5750 3575 5350 3575
+Wire Wire Line
+	5750 3675 5350 3675
+Wire Wire Line
+	5750 3775 5350 3775
+Text Label 5350 3775 0    50   ~ 0
+GND
+Text Label 5350 3275 0    50   ~ 0
++5V
+Text Label 5350 3375 0    50   ~ 0
++3.3V
+Text Label 5350 3475 0    50   ~ 0
+ROD
+Text Label 5350 3575 0    50   ~ 0
+FAN
+Text Label 5350 3675 0    50   ~ 0
+AUG
+Text Label 4150 1825 0    50   ~ 0
+AC_P
+$Comp
+L Device:R_Small R1
+U 1 1 5E08588F
+P 3900 2950
+F 0 "R1" H 3959 2996 50  0000 L CNN
+F 1 "AUG" H 3959 2905 50  0000 L CNN
+F 2 "" H 3900 2950 50  0001 C CNN
+F 3 "~" H 3900 2950 50  0001 C CNN
+	1    3900 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R2
+U 1 1 5E085C81
+P 3725 3950
+F 0 "R2" H 3784 3996 50  0000 L CNN
+F 1 "FAN" H 3784 3905 50  0000 L CNN
+F 2 "" H 3725 3950 50  0001 C CNN
+F 3 "~" H 3725 3950 50  0001 C CNN
+	1    3725 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R3
+U 1 1 5E085F7B
+P 3375 5000
+F 0 "R3" H 3434 5046 50  0000 L CNN
+F 1 "ROD" H 3434 4955 50  0000 L CNN
+F 2 "" H 3375 5000 50  0001 C CNN
+F 3 "~" H 3375 5000 50  0001 C CNN
+	1    3375 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x06 J1
+U 1 1 5E2430B6
+P 4325 6075
+F 0 "J1" H 4405 6067 50  0000 L CNN
+F 1 "RTD 1-2" H 4405 5976 50  0000 L CNN
+F 2 "" H 4325 6075 50  0001 C CNN
+F 3 "~" H 4325 6075 50  0001 C CNN
+	1    4325 6075
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x06 J2
+U 1 1 5E243CB2
+P 5575 6075
+F 0 "J2" H 5655 6067 50  0000 L CNN
+F 1 "RTD 3-4" H 5655 5976 50  0000 L CNN
+F 2 "" H 5575 6075 50  0001 C CNN
+F 3 "~" H 5575 6075 50  0001 C CNN
+	1    5575 6075
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x06 J6
+U 1 1 5E24492B
+P 6650 6075
+F 0 "J6" H 6730 6067 50  0000 L CNN
+F 1 "RTD 5-6" H 6730 5976 50  0000 L CNN
+F 2 "" H 6650 6075 50  0001 C CNN
+F 3 "~" H 6650 6075 50  0001 C CNN
+	1    6650 6075
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x15_Counter_Clockwise J7
+U 1 1 5E2593D3
+P 7775 2075
+F 0 "J7" H 7825 2992 50  0000 C CNN
+F 1 "Logic Header" H 7825 2901 50  0000 C CNN
+F 2 "" H 7775 2075 50  0001 C CNN
+F 3 "~" H 7775 2075 50  0001 C CNN
+	1    7775 2075
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x06 J8
+U 1 1 5E25B7B5
+P 8375 4075
+F 0 "J8" H 8455 4067 50  0000 L CNN
+F 1 "Display" H 8455 3976 50  0000 L CNN
+F 2 "" H 8375 4075 50  0001 C CNN
+F 3 "~" H 8375 4075 50  0001 C CNN
+	1    8375 4075
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x06 J?
+U 1 1 5E260B0E
+P 7800 5900
+F 0 "J?" H 7880 5892 50  0000 L CNN
+F 1 "Enhanced" H 7880 5801 50  0000 L CNN
+F 2 "" H 7800 5900 50  0001 C CNN
+F 3 "~" H 7800 5900 50  0001 C CNN
+	1    7800 5900
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
