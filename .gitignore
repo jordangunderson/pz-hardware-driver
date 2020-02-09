@@ -27,3 +27,5 @@ fp-info-cache
 *.xml
 *.csv
 
+# Annoying stuff
+*.DS_Store

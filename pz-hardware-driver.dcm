@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP FS10-250-C2
+D Transformer, single primary, dual secondary
+K transformer coil magnet
+F ~
+$ENDCMP
+#
+#End Doc Library

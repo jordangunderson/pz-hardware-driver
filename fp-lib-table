@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name pz-hardware-driver)(type KiCad)(uri ${KIPRJMOD}/pz-hardware-driver.pretty)(options "")(descr ""))
+)
